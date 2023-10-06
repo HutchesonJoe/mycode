@@ -1,0 +1,45 @@
+In Python, the `.print()` function is used to output/display the specified message or value(s) onto the console or standard output. It is used to print the provided data as a string, and it automatically adds a newline character at the end.
+
+Here is a basic syntax of the `.print()` function:
+
+```python
+print(value1, value2, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+```
+
+- `value1, value2, ...` are the values or expressions to be printed. You can pass multiple arguments to print, which will be displayed with space separators by default.
+
+- `sep=' '` is an optional argument that specifies the separator between the values. By default, it is set to a space character.
+
+- `end='\n'` is also an optional argument that defines what will be printed after all the values are displayed. By default, it is set to a newline character.
+
+- `file=sys.stdout` is used to specify the file object where the values are printed. By default, it is set to the standard output (console).
+
+- `flush=False` is an optional argument that defines whether the output should be flushed immediately or not. By default, it is set to `False`.
+
+Here are some examples of using the `.print()` function:
+
+```python
+# Printing a single value
+print("Hello, World!")
+
+# Printing multiple values separated by a custom separator
+print("Hello", "World", sep=", ")
+
+# Printing without a new line
+print("Hello, ", end='')
+print("World!")
+
+# Redirecting output to a file
+file = open("output.txt", "w")
+print("Hello, World!", file=file)
+file.close()
+```
+
+Output:
+```
+Hello, World!
+Hello, World
+Hello, World!
+```
+
+Note: In Python 3.x, `.print()` is a function, while in Python 2.x, it is treated as a statement. In Python 2.x, parentheses are not always required when using `.print()` statement.
